@@ -6,6 +6,7 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
+  background: #3d3f48;
   font-family: "Arial", "Helvetica", sans-serif;
   line-height: 1.6; }
 
@@ -125,22 +126,6 @@ img {
 .mr {
   margin-right: 10px; }
 
-.section-banner {
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: 15rem;
-  width: 100%;
-  position: relative; }
-  .section-banner:after {
-    background-image: linear-gradient(to bottom, #3d3f48 10%, rgba(86, 90, 110, 0.79));
-    content: "";
-    height: 100%;
-    opacity: 0.7;
-    position: absolute;
-    width: 100%;
-    z-index: 1; }
-
 .section-title {
   display: block;
   font-size: 2.5rem;
@@ -178,12 +163,43 @@ img {
 .footer-link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 
+.section-banner {
+  background: no-repeat 0 25% / cover;
+  height: 15rem;
+  width: 100%;
+  position: relative; }
+  .section-banner:after {
+    background-image: linear-gradient(to bottom, #3d3f48 10%, rgba(86, 90, 110, 0.79));
+    content: "";
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    z-index: 1; }
+
 @media only screen and (min-width: 650px) {
   .py-8 {
     padding: 8rem 0; }
   .section-title {
     font-size: 4rem;
     text-align: left; } }
+
+@media only screen and (min-width: 1050px) {
+  .section-banner {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    position: relative; }
+    .section-banner:after {
+      background-image: linear-gradient(to bottom, #3d3f48 10%, rgba(86, 90, 110, 0.79));
+      content: "";
+      height: 100%;
+      opacity: 0.7;
+      position: absolute;
+      width: 100%;
+      z-index: 1; } }
 
 #navbar .container {
   width: 100%; }
