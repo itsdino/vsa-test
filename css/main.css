@@ -7,7 +7,7 @@ html {
 
 body {
   background: #3d3f48;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "OpenSans", sans-serif;
   line-height: 1.6; }
 
 a {
@@ -127,6 +127,7 @@ img {
   margin-right: 10px; }
 
 .section-title {
+  font-family: "Ubuntu", sans-serif;
   display: block;
   font-size: 2.5rem;
   font-weight: 100;
@@ -162,6 +163,11 @@ img {
 
 .footer-link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.features {
+  list-style: disc;
+  padding-left: 1rem;
+  list-style-position: outside; }
 
 .section-banner {
   background: no-repeat 0 25% / cover;
@@ -483,7 +489,7 @@ img {
         */ }
       #header-main .header-wrapper .header-content h1 {
         text-align: center;
-        font-family: "Arial", "Helvetica";
+        font-family: "Ubuntu", sans-serif;
         font-size: 7.7vw;
         font-weight: normal;
         color: white;
@@ -494,7 +500,7 @@ img {
       #header-main .header-wrapper .header-content p {
         display: none;
         color: #fff;
-        font-family: "Arial", "Helvetica";
+        font-family: "OpenSans", sans-serif;
         font-size: 1rem;
         font-weight: normal; }
         #header-main .header-wrapper .header-content p .slash {
@@ -554,6 +560,24 @@ img {
   #header-main .header-wrapper {
     height: auto;
     margin-top: 206px; } }
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ubuntu/ubuntu-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/ubuntu/ubuntu-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-v15-latin-regular.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-v15-latin-regular.woff") format("woff"), url("../fonts/ubuntu/ubuntu-v15-latin-regular.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-v15-latin-regular.svg#Ubuntu") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans/open-sans-v18-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/opensans/open-sans-v18-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/open-sans-v18-latin-regular.woff2") format("woff2"), url("../fonts/opensans/open-sans-v18-latin-regular.woff") format("woff"), url("../fonts/opensans/open-sans-v18-latin-regular.ttf") format("truetype"), url("../fonts/opensans/open-sans-v18-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
 
 .btn-main, .btn-light, .btn-dark, .btn-cta {
   border: none;

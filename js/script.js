@@ -94,67 +94,24 @@ const heroNavbar = () => {
   }
 };
 
+//
+
+
 // gallery calls
-lightGallery(document.getElementById('gallery-1'), {
-  startClass: 'lg-start-fade',
-  mode: 'lg-fade',
-  swipeThreshold: 25,
-  download: false
-});
-
-lightGallery(document.getElementById('gallery-2'), {
-  loop: false,
-  preload: 2,
-  hideControlOnEnd: true,
-  backdropDuration: 300,
-  startClass: 'lg-start-fade',
-  mode: 'lg-fade',
-  swipeThreshold: 25,
-  download: false
-});
-
-lightGallery(document.getElementById('gallery-3'), {
-  startClass: 'lg-start-fade',
-  mode: 'lg-fade',
-  swipeThreshold: 25,
-  download: false
-});
-
-lightGallery(document.getElementById('gallery-4'), {
-  startClass: 'lg-start-fade',
-  mode: 'lg-fade',
-  swipeThreshold: 25,
-  download: false
-});
-
-lightGallery(document.getElementById('gallery-5'), {
-  startClass: 'lg-start-fade',
-  mode: 'lg-fade',
-  swipeThreshold: 25,
-  download: false
-});
-
-lightGallery(document.getElementById('gallery-6'), {
-  startClass: 'lg-start-fade',
-  mode: 'lg-fade',
-  swipeThreshold: 25,
-  download: false
-});
-
-
-lightGallery(document.getElementById('gallery-7'), {
-  startClass: 'lg-start-fade',
-  mode: 'lg-fade',
-  swipeThreshold: 25,
-  download: false
-});
-
-lightGallery(document.getElementById('gallery-8'), {
-  startClass: 'lg-start-fade',
-  mode: 'lg-fade',
-  swipeThreshold: 25,
-  download: false
-});
+for (let i=1; i <= 8; i++) {
+  lightGallery(document.getElementById('gallery-' + i), {
+    preload: 2,
+    enableDrag: false,
+    enableSwipe: true,
+    backdropDuration: 300,
+    startClass: 'lg-start-fade',
+    mode: 'lg-fade',
+    swipe: false,
+    mousewheel: false,
+    swipeThreshold: 25,
+    download: false
+  });
+}
 
 // jQuery smooth scroll to element
 $("#navbar ul li a, .site-link").on("click", function (e) {
