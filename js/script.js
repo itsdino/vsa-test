@@ -100,15 +100,13 @@ const heroNavbar = () => {
 // gallery calls
 for (let i=1; i <= 8; i++) {
   lightGallery(document.getElementById('gallery-' + i), {
-    preload: 2,
-    enableDrag: false,
-    enableSwipe: true,
-    backdropDuration: 300,
     startClass: 'lg-start-fade',
     mode: 'lg-fade',
-    swipe: false,
+    preload: 2,
+    enableDrag: false,
+    enableSwipe: false,
+    backdropDuration: 300,
     mousewheel: false,
-    swipeThreshold: 25,
     download: false
   });
 }
