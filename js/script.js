@@ -96,42 +96,50 @@ const heroNavbar = () => {
 
 // gallery calls
 lightGallery(document.getElementById('gallery-1'), {
+  startClass: 'lg-start-fade',
   mode: 'lg-fade',
   download: false
 });
 
 lightGallery(document.getElementById('gallery-2'), {
+  startClass: 'lg-start-fade',
   mode: 'lg-fade',
   download: false
 });
 
 lightGallery(document.getElementById('gallery-3'), {
+  startClass: 'lg-start-fade',
   mode: 'lg-fade',
   download: false
 });
 
 lightGallery(document.getElementById('gallery-4'), {
+  startClass: 'lg-start-fade',
   mode: 'lg-fade',
   download: false
 });
 
 lightGallery(document.getElementById('gallery-5'), {
+  startClass: 'lg-start-fade',
   mode: 'lg-fade',
   download: false
 });
 
 lightGallery(document.getElementById('gallery-6'), {
+  startClass: 'lg-start-fade',
   mode: 'lg-fade',
   download: false
 });
 
 
 lightGallery(document.getElementById('gallery-7'), {
+  startClass: 'lg-start-fade',
   mode: 'lg-fade',
   download: false
 });
 
 lightGallery(document.getElementById('gallery-8'), {
+  startClass: 'lg-start-fade',
   mode: 'lg-fade',
   download: false
 });
