@@ -103,6 +103,10 @@ lightGallery(document.getElementById('gallery-1'), {
 });
 
 lightGallery(document.getElementById('gallery-2'), {
+  loop: false,
+  preload: 2,
+  hideControlOnEnd: true,
+  backdropDuration: 300,
   startClass: 'lg-start-fade',
   mode: 'lg-fade',
   swipeThreshold: 25,
