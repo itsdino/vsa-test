@@ -5,10 +5,20 @@
 html {
   -webkit-text-size-adjust: 100%; }
 
+.fadein {
+  opacity: 0;
+  -moz-transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+  transition: opacity 1.5s; }
+
 body {
   background: #3d3f48;
   font-family: "Roboto", sans-serif;
   line-height: 1.6; }
+
+body.loaded {
+  opacity: 1; }
 
 a {
   color: #333;
@@ -41,6 +51,12 @@ img {
 .bg-medium {
   background: #ccc;
   color: #333; }
+
+.strong500 {
+  font-weight: 500; }
+
+.strong700 {
+  font-weight: 700; }
 
 .text-center {
   text-align: center; }
@@ -137,7 +153,8 @@ img {
 .section-subtitle {
   line-height: 1.1;
   font-size: 2rem;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center; }
 
 .section-subtitle-2 {
   font-size: 2rem;
@@ -167,7 +184,7 @@ img {
 
 .features {
   list-style: disc;
-  padding-left: 1rem;
+  padding-left: 1.2rem;
   list-style-position: outside; }
 
 .section-banner {
@@ -189,6 +206,8 @@ img {
     padding: 8rem 0; }
   .section-title {
     font-size: 4rem;
+    text-align: left; }
+  .section-subtitle {
     text-align: left; } }
 
 @media only screen and (min-width: 1050px) {
@@ -212,16 +231,24 @@ img {
   width: 100%; }
 
 .navigation {
+  -moz-transition: opacity 1.8s, transform 1.3s, box-shadow 0.15s, background-color 0.15s ease-out;
+  -webkit-transition: opacity 1.8s, transform 1.3s, box-shadow 0.15s, background-color 0.15s ease-out;
+  -o-transition: opacity 1.8s, transform 1.3s, box-shadow 0.15s, background-color 0.15s ease-out;
+  transition: opacity 1.8s, transform 1.3s, box-shadow 0.15s, background-color 0.15s ease-out;
+  opacity: 0;
+  transform: translateY(-400px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #4b4e57;
+  background-color: #4b4e57;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
-  transition: box-shadow, background 0.15s ease-out;
   width: 100%;
   z-index: 99; }
+  .navigation.loaded {
+    opacity: 1;
+    transform: translateY(0); }
   .navigation.top {
     box-shadow: none;
     background: transparent; }
@@ -364,9 +391,9 @@ img {
     background: rgba(75, 78, 87, 0.75);
     backdrop-filter: blur(8px);
     padding-top: 0px;
-    transition: all 0.3s ease-in-out; }
+    transition: opacity 1.8s ease-out, transform 1.5s ease-out, background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out; }
     .navigation.top {
-      background: transparent;
+      background-color: transparent;
       backdrop-filter: blur(0px); }
   .navigation ul {
     background: transparent;
@@ -467,11 +494,20 @@ img {
       position: absolute;
       width: 100%; }
   #header-main .header-wrapper {
+    opacity: 0;
+    -moz-transition: opacity 1.5s, transform 1s;
+    -webkit-transition: opacity 1.5s, transform 1s;
+    -o-transition: opacity 1.5s, transform 1s;
+    transition: opacity 1.5s, transform 1s;
+    transform: translateY(200px);
     align-items: center;
     display: flex;
     height: 60vh;
     justify-content: center;
     margin-top: 128px; }
+    #header-main .header-wrapper.loaded {
+      transform: translateY(0);
+      opacity: 1; }
     #header-main .header-wrapper .header-content {
       box-sizing: border-box;
       color: #3d3f48;
