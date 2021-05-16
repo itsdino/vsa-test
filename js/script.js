@@ -1,3 +1,5 @@
+const header = document.querySelector(".header-wrapper");
+const navBarConst = document.getElementById("navbar");
 // initializes lax
 window.onload = () => {
   lax.setup();
@@ -6,6 +8,8 @@ window.onload = () => {
     window.requestAnimationFrame(updateLax);
   };
   window.requestAnimationFrame(updateLax);
+  header.classList.add('loaded');
+  navBarConst.classList.add('loaded');
 };
 
 // scroll to top button (to be implemented)
@@ -19,7 +23,6 @@ const hamburgerMenuIcon = document.querySelector(".menu-icon");
 const hamburgerDropdownFix = document.querySelector(".navigation li:first-child");
 
 // for desktop navbar
-const navBarConst = document.getElementById("navbar");
 const logoConst = document.querySelector(".logo");
 const menuWrapperConst = document.querySelector("#navbar ul");
 const menuLinksConst = document.querySelectorAll("#navbar ul li a");
@@ -59,7 +62,7 @@ window.onscroll = () => {
 
 let scrolled = false;
 const navBarSizeHandler = () => {
-  if (window.scrollY > 90) {
+  if (window.scrollY > 50) {
     if (!scrolled) {
       shrinkNavbar();
       scrolled = true;
@@ -124,5 +127,8 @@ $("#navbar ul li a, .site-link").on("click", function (e) {
     );
   }
 });
+
+//
+
 
 
