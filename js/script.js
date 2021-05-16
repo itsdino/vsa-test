@@ -62,7 +62,7 @@ window.onscroll = () => {
 
 let scrolled = false;
 const navBarSizeHandler = () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 90) {
     if (!scrolled) {
       shrinkNavbar();
       scrolled = true;
