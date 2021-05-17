@@ -231,12 +231,10 @@ img {
   width: 100%; }
 
 .navigation {
-  -moz-transition: opacity 1.8s, transform 1.3s, box-shadow 0.15s, background-color 0.15s ease-out;
-  -webkit-transition: opacity 1.8s, transform 1.3s, box-shadow 0.15s, background-color 0.15s ease-out;
-  -o-transition: opacity 1.8s, transform 1.3s, box-shadow 0.15s, background-color 0.15s ease-out;
-  transition: opacity 1.8s, transform 1.3s, box-shadow 0.15s, background-color 0.15s ease-out;
-  opacity: 0;
-  transform: translateY(-400px);
+  -moz-transition: box-shadow 0.15s, background-color 0.15s ease-out;
+  -webkit-transition: box-shadow 0.15s, background-color 0.15s ease-out;
+  -o-transition: box-shadow 0.15s, background-color 0.15s ease-out;
+  transition: box-shadow 0.15s, background-color 0.15s ease-out;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -246,9 +244,6 @@ img {
   top: 0;
   width: 100%;
   z-index: 99; }
-  .navigation.loaded {
-    opacity: 1;
-    transform: translateY(0); }
   .navigation.top {
     box-shadow: none;
     background: transparent; }
@@ -391,7 +386,7 @@ img {
     background: rgba(75, 78, 87, 0.75);
     backdrop-filter: blur(8px);
     padding-top: 0px;
-    transition: opacity 1.8s ease-out, transform 1.5s ease-out, background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out; }
+    transition: background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out; }
     .navigation.top {
       background-color: transparent;
       backdrop-filter: blur(0px); }
