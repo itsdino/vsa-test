@@ -30,6 +30,12 @@ ul {
 img {
   width: 100%; }
 
+.icon {
+  pointer-events: none;
+  height: 25px;
+  width: 25px;
+  margin: 0 0 -8px 0; }
+
 .container {
   margin: auto;
   max-width: 1500px;
@@ -649,7 +655,8 @@ img {
   cursor: pointer;
   display: inline-block;
   padding: 1rem 2.6rem;
-  transition: all 0.25s; }
+  transition: all 0.25s;
+  line-height: 1; }
 
 .btn-main {
   background-color: #3d3f48;
