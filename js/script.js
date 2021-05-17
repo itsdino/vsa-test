@@ -1,5 +1,5 @@
 const header = document.querySelector(".header-wrapper");
-const navBarConst = document.getElementById("navbar");
+
 // initializes lax
 window.onload = () => {
   lax.setup();
@@ -9,7 +9,6 @@ window.onload = () => {
   };
   window.requestAnimationFrame(updateLax);
   header.classList.add('loaded');
-  navBarConst.classList.add('loaded');
 };
 
 // scroll to top button (to be implemented)
@@ -17,6 +16,7 @@ window.onload = () => {
 // const footer = document.getElementById("main-footer");
 
 // for mobile navbar
+const navBarConst = document.getElementById("navbar");
 const menuItemsConst = document.querySelectorAll(".menu-item");
 const menuBtnConst = document.getElementById("menu-btn");
 const hamburgerMenuIcon = document.querySelector(".menu-icon");
