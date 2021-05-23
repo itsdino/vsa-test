@@ -1,7 +1,11 @@
 const header = document.querySelector(".header-wrapper");
 
+
 // initializes lax
 window.onload = () => {
+  AOS.init({
+    once: true
+  });
   lax.setup();
   const updateLax = () => {
     lax.update(window.scrollY);
@@ -101,7 +105,7 @@ const heroNavbar = () => {
 
 
 // gallery calls
-for (let i=1; i <= 8; i++) {
+for (let i=1; i <= 13; i++) {
   lightGallery(document.getElementById('gallery-' + i), {
     startClass: 'lg-start-fade',
     mode: 'lg-fade',
