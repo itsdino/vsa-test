@@ -13,7 +13,7 @@ html {
   transition: opacity 1.5s; }
 
 body {
-  background: #3d3f48;
+  background: #4A506A;
   font-family: "Roboto", sans-serif;
   line-height: 1.6; }
 
@@ -43,11 +43,11 @@ img {
   padding: 0 1.5rem; }
 
 .bg-main {
-  background: #3d3f48;
+  background: #4A506A;
   color: #f4f4f4; }
 
 .bg-dark {
-  background: #333;
+  background: #1E202A;
   color: #f4f4f4; }
 
 .bg-light {
@@ -179,7 +179,7 @@ img {
   font-size: 0.9rem; }
 
 .external-link {
-  color: #4b4e57;
+  color: #575E7D;
   font-size: 0.8rem; }
 
 .disabled {
@@ -197,9 +197,10 @@ img {
   background: no-repeat 0 25% / cover;
   height: 15rem;
   width: 100%;
-  position: relative; }
+  position: relative;
+  transition: all 0.3s ease-out; }
   .section-banner:after {
-    background-image: linear-gradient(to bottom, #3d3f48 10%, rgba(86, 90, 110, 0.79));
+    background-image: linear-gradient(to bottom, #4a506a 10%, rgba(74, 80, 106, 0.79));
     content: "";
     height: 100%;
     opacity: 0.7;
@@ -221,11 +222,11 @@ img {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 15rem;
+    height: 18rem;
     width: 100%;
     position: relative; }
     .section-banner:after {
-      background-image: linear-gradient(to bottom, #3d3f48 10%, rgba(86, 90, 110, 0.79));
+      background-image: linear-gradient(to bottom, #4a506a 10%, rgba(74, 80, 106, 0.79));
       content: "";
       height: 100%;
       opacity: 0.7;
@@ -244,7 +245,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #4b4e57;
+  background-color: #575E7D;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -255,7 +256,7 @@ img {
     background: transparent; }
 
 .navigation ul {
-  background: #4b4e57;
+  background: #575E7D;
   width: 100%;
   position: absolute;
   left: 0;
@@ -295,7 +296,7 @@ img {
 
 .navigation li a:hover,
 .navigation .menu-btn:hover {
-  background: #26272B;
+  background: #1E202A;
   color: #fff;
   border-radius: 10px; }
 
@@ -389,7 +390,7 @@ img {
     width: 100%; }
   .navigation {
     height: 98px;
-    background: rgba(75, 78, 87, 0.75);
+    background: rgba(87, 94, 125, 0.75);
     backdrop-filter: blur(8px);
     padding-top: 0px;
     transition: background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out; }
@@ -488,7 +489,7 @@ img {
     width: 100%;
     z-index: -2; }
     #header-main .header-img:after {
-      background-image: linear-gradient(to bottom, #3d3f48 10%, rgba(86, 90, 110, 0.79));
+      background-image: linear-gradient(to bottom, #4a506a 10%, rgba(74, 80, 106, 0.79));
       content: "";
       height: 100%;
       opacity: 1;
@@ -511,7 +512,7 @@ img {
       opacity: 1; }
     #header-main .header-wrapper .header-content {
       box-sizing: border-box;
-      color: #3d3f48;
+      color: #4A506A;
       text-align: center;
       width: 100%;
       /*.header-line {
@@ -543,7 +544,7 @@ img {
         font-weight: normal; }
         #header-main .header-wrapper .header-content p .slash {
           border-radius: 50%;
-          color: #4b4e57;
+          color: #575E7D;
           font-weight: lighter;
           margin: auto 1rem;
           opacity: 0.5; }
@@ -659,7 +660,7 @@ img {
   line-height: 1; }
 
 .btn-main {
-  background-color: #3d3f48;
+  background-color: #4A506A;
   color: #333; }
 
 .btn-light {
@@ -700,7 +701,7 @@ input[class^="btn"]:hover {
     text-decoration: none; }
   .project-grid .project-card {
     position: relative;
-    background: #4b4e57;
+    background: #575E7D;
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -730,7 +731,7 @@ input[class^="btn"]:hover {
       top: 0;
       left: 0;
       z-index: 4;
-      background-color: #26272B;
+      background-color: #1E202A;
       opacity: 0;
       transition: all 0.3s ease-in-out;
       pointer-events: none; }
@@ -761,7 +762,7 @@ input[class^="btn"]:hover {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 25px; }
   .contact-grid .contact-card {
-    background: #4b4e57;
+    background: rgba(87, 94, 125, 0.15);
     padding: 1.5rem;
     border-radius: 10px;
     transition: all 0.3s ease-in-out; }
@@ -782,7 +783,7 @@ input[class^="btn"]:hover {
     .contact-grid .contact-card .contact-link {
       font-size: 0.9rem; }
     .contact-grid .contact-card:hover {
-      background: #26272B; }
+      background: #1E202A; }
 
 @media only screen and (min-width: 650px) {
   .contact-grid {
@@ -840,5 +841,5 @@ input[class^="btn"]:hover {
       #home-dienstleistungen .intro .erfahrung img {
         margin-left: 150px;
         display: block;
-        height: 400px;
+        height: 350px;
         width: auto; } }
