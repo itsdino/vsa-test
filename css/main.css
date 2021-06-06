@@ -776,14 +776,15 @@ img {
   src: local(""), url("../fonts/roboto/roboto-v27-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v27-latin-700.woff2") format("woff2"), url("../fonts/roboto/roboto-v27-latin-700.woff") format("woff"), url("../fonts/roboto/roboto-v27-latin-700.ttf") format("truetype"), url("../fonts/roboto/roboto-v27-latin-700.svg#Roboto") format("svg");
   /* Legacy iOS */ }
 
-.btn-main, .btn-light, .btn-dark, .btn-cta {
+.btn-main, .btn-light, .btn-dark, .btn-cta, .btn-body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
   display: inline-block;
   padding: 1rem 2.6rem;
   transition: all 0.25s;
-  line-height: 1; }
+  line-height: 1;
+  text-align: center; }
 
 .btn-main {
   background-color: #4A506A;
@@ -802,6 +803,12 @@ img {
   border: 3px solid white;
   color: #fff; }
 
+.btn-body {
+  background-color: transparent;
+  border: 3px solid white;
+  color: #fff;
+  text-align: center; }
+
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn"]:hover {
@@ -812,6 +819,13 @@ input[class^="btn"]:hover {
   a[class^="btn-"]:hover i:before,
   input[class^="btn"]:hover i:before {
     color: #333; }
+
+.body-button {
+  text-align: center; }
+
+@media only screen and (min-width: 765px) {
+  .body-button {
+    text-align: left; } }
 
 .project-grid {
   align-items: center;
@@ -939,7 +953,16 @@ input[class^="btn"]:hover {
     display: flex;
     align-items: center;
     justify-content: center; }
-    #home-dienstleistungen .intro .erfahrung img {
+    #home-dienstleistungen .intro .erfahrung {
+      display: none; }
+
+#about-description {
+  overflow: hidden; }
+  #about-description .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #about-description .intro .erfahrung img {
       display: none;
       height: 350px;
       width: auto; }
@@ -951,21 +974,29 @@ input[class^="btn"]:hover {
       display: flex;
       align-items: center;
       justify-content: center; }
-      #home-dienstleistungen .intro .erfahrung img {
+      #home-dienstleistungen .intro .erfahrung {
         margin-left: 100px;
         display: block;
-        height: 350px;
-        width: auto; } }
+        background: url("../img/site-components/vili.png") no-repeat 0 100%/cover;
+        height: 300px;
+        width: 300px; }
+  #about-description {
+    overflow: hidden; }
+    #about-description .intro {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #about-description .intro .erfahrung img {
+        border-radius: 10px;
+        margin-left: 100px;
+        display: block;
+        height: 300px;
+        width: 300px; } }
 
 @media only screen and (min-width: 1300px) {
   #home-dienstleistungen {
     overflow: hidden; }
-    #home-dienstleistungen .intro {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      #home-dienstleistungen .intro .erfahrung img {
-        margin-left: 150px;
-        display: block;
-        height: 350px;
-        width: auto; } }
+    #home-dienstleistungen .intro .erfahrung {
+      margin-left: 150px;
+      height: 350px;
+      width: 350px; } }
