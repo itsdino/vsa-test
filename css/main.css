@@ -180,7 +180,7 @@ img {
 
 .body-link {
   color: #fff;
-  text-decoration: underline; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
   .body-link:visited {
     color: #fff; }
 
@@ -192,7 +192,11 @@ img {
   pointer-events: none; }
 
 .footer-link {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  font-size: 0.9rem;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
+  .footer-link:visited {
+    color: #fff; }
 
 .features {
   list-style: disc;
