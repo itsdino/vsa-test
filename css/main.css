@@ -879,10 +879,25 @@ input[class^="btn"]:hover {
       opacity: 0;
       transition: all 0.3s ease-in-out;
       pointer-events: none; }
+    .project-grid .project-card::after {
+      content: "";
+      background: url("../img/site-components/gallery-button.svg") no-repeat 50% 0/auto;
+      filter: invert(1);
+      position: absolute;
+      top: 42.5%;
+      left: 42.5%;
+      height: 15%;
+      width: 15%;
+      z-index: 4;
+      opacity: 0;
+      transition: all 0.4s ease-in;
+      pointer-events: none; }
     .project-grid .project-card:hover img {
       transform: scale(1.5); }
     .project-grid .project-card:hover::before {
-      opacity: 0.5; }
+      opacity: 0.85; }
+    .project-grid .project-card:hover::after {
+      opacity: 1; }
 
 @media only screen and (min-width: 650px) {
   .project-grid {
